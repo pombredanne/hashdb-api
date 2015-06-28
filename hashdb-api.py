@@ -32,5 +32,3 @@ class HashDB(resource.Resource):
 
 endpoints.serverFromString(reactor, "tcp:8080").listen(server.Site(HashDB()))
 reactor.run()
-
-#http://0.0.0.0:8080/0800fc577294c34e0b28ad2839435945
