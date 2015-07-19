@@ -22,7 +22,7 @@ class Echo(protocol.Protocol):
             d.addCallback(printData)
 
         else: 
-            self.transport.write("No Matches\n")
+            self.transport.write("No Matches")
 
 class EchoFactory(protocol.Factory):
     def buildProtocol(self, addr):
