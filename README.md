@@ -10,7 +10,7 @@ hashdb-api.py -f pcap_blocks_out.txt > block_analysis_out.txt
 ```
 Review the output looking for block hashes that appear in one or more samples based on count from the VirusShare.com collection.  Additional information is available on which samples contained the matching blocks by referencing the FileBlock.Info project.
 ## server
-
+The hashdb-api server requires that Twisted Python and HashDB be installed with the appropriate permissions prior to starting the TCP socket.
 ```
 twistd -y hashdb.tac
 ```
